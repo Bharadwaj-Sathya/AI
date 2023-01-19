@@ -125,7 +125,7 @@ class LinkedList:
 
 if __name__ == '__main__':
     singlyLinkedList = LinkedList()
-    print("Singly Linked List Operations:")
+    print("-----------------------------Singly Linked List Operations-----------------------------")
     print("1. Insert At Beginning")
     print("2. Insert At Position")
     print("3. Insert At End")
@@ -137,9 +137,11 @@ if __name__ == '__main__':
     print("9. Search in Singly Linked List")
     print("10. Sort Singly Linked List")
     print("11. Quit")
+    print("----------------------------------------------------------------------------------------")
 
     while True:
         n = int(input("Enter your choice:").strip())
+        # This code runs only in python 3.10 or above versions
         match n:
             case 1:
                 data = input("Enter a value:")
