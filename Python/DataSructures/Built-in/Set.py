@@ -1,0 +1,10 @@
+lis = []
+print(lis)
+lis.append(1)
+lis.append('Hello')
+lis.append(-123)
+print(lis)
+lis.pop()
+print(lis)
+lis.remove(1)
+print(lis)
