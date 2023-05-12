@@ -5,3 +5,5 @@ class TwoSum:
             for j in range(1, len(nums)):
                 if nums[i] + nums[j] == target:
                     return [i, j]
+
+
