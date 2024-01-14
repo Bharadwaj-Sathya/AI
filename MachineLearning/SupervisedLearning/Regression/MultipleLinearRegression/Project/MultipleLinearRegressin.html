@@ -20137,6 +20137,43 @@ Train Size : 20.000895094880057
 
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Calculation-of-Multiple-Linear-Regression">Calculation of Multiple Linear Regression<a class="anchor-link" href="#Calculation-of-Multiple-Linear-Regression">&#182;</a></h3><p>Several circumstances that influence the dependent variable simultaneously can be controlled through multiple regression analysis. Regression analysis is a method of analyzing the relationship between independent variables and dependent variables.</p>
+<p>Let $k$ represent the number of variables denoted by $x_1, x_2, x_3, ……, x_k$.</p>
+<p>For this method, we assume that we have $k$ independent variables $x_1, . . . , x_k$ that we can set, then they probabilistically determine an outcome $Y$.</p>
+<p>Furthermore, we assume that $Y$ is linearly dependent on the factors according to</p>
+$$Y = \beta_0 + \beta_1x_1 + \beta_2x_2 + · · · + \beta_kx_k + \epsilon$$<p>The variable $y_i$ is dependent or predicted
+The slope of $y$ depends on the y-intercept, that is, when $x_i$ and $x_2$ are both zero, $y$ will be $\beta_0$.
+The regression coefficients $\beta_1$ and $\beta_2$ represent the change in $y$ as a result of one-unit changes in $x_{i1}$ and $x_{i2}$.
+$\beta_p$ refers to the slope coefficient of all independent variables
+$\epsilon$ term describes the random error (residual) in the model.
+Where $\epsilon$ is a standard error, this is just like we had for simple linear regression, except $k$ doesn’t have to be 1.</p>
+<p>We have $n$ observations, $n$ typically being much more than $k$.</p>
+<p>For $i$ th observation, we set the independent variables to the values $x_{i1}, x_{i2} . . . , x_{ik}$ and measure a value $y_i$ for the random variable $Y_i$.</p>
+<p>Thus, the model can be described by the equations.</p>
+$$Y_i = \beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + · · · + \beta_kx_{ik} + i$$<p>for $i = 1, 2, . . . , n$,</p>
+<p>Where the errors $i$ are independent standard variables, each with mean 0 and the same unknown variance $\sigma^2$.</p>
+<p>Altogether the model for multiple linear regression has $k + 2$ unknown parameters:</p>
+<p>$\beta_0, \beta_1, . . . , \beta_k$, and $\sigma^2$.</p>
+<p>When $k$ was equal to 1, we found the least squares line $y = \hat{\beta}_0 +\hat{\beta}_1x$.</p>
+<p>It was a line in the plane $R^2$.</p>
+<p>Now, with $k ≥ 1$, we’ll have a least squares hyperplane.</p>
+$$y = \hat{\beta}_0 + \hat{\beta}_1x_1 + \hat{\beta}_2x_2 + · · · + \hat{\beta}_kx_k$$<p>in $R^{k+1}$.</p>
+<p>The way to find the estimators $\hat{\beta}_0, \hat{\beta}_1, . . ., and \hat{\beta}_k$ is the same.</p>
+<p>Take the partial derivatives of the squared error.</p>
+$$Q = \sum_{i=1}^{n} (y_i − (\beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + · · · + \beta_kx_{ik}))^2$$<p></p>
+<p>When that system is solved we have fitted values</p>
+$$\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1x_{i1} + \hat{\beta}_2x_{i2} + · · · + \hat{\beta}_kx_{ik}$$<p>for $i = 1, . . . , n$ that should be close to the actual values $y_i$</p>
+
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
